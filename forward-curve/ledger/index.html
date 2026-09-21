@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ledger — Forward Curve</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="wrap">
+    <a class="brand" href="http://localhost:9081/">
+      <img src="logo.png" alt="Forward Curve logo" class="brand-mark">
+      <span class="brand-name">Forward Curve<span class="sub">ENERGY ADVISORY</span></span>
+    </a>
+    <nav class="tools" aria-label="Product suite">
+      <a href="http://localhost:9081/">Home</a>
+      <a href="http://localhost:9082/">Curve</a>
+      <a href="http://localhost:9083/" aria-current="page">Ledger</a>
+      <a href="http://localhost:9084/">Portal</a>
+      <a href="http://localhost:9085/">Field Notes</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <h2 class="section-title" style="margin-top:44px;">Emissions ledger</h2>
+    <p class="section-sub">Scope 1, 2, and 3 emissions tracked against the client's reduction target, formatted for the frameworks auditors expect. Sample data for demonstration.</p>
+
+    <div class="stat-strip">
+      <div class="stat"><div class="value">184.2k t</div><div class="label">Scope 1, trailing 12mo</div></div>
+      <div class="stat"><div class="value">41.6k t</div><div class="label">Scope 2, trailing 12mo</div></div>
+      <div class="stat"><div class="value">-9.4%</div><div class="label">change vs. prior year</div></div>
+      <div class="stat"><div class="value">2030</div><div class="label">target year</div></div>
+    </div>
+
+    <table class="data">
+      <thead>
+        <tr><th>Facility</th><th>Scope 1 (t CO2e)</th><th>Scope 2 (t CO2e)</th><th>Offsets applied</th><th>Status</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Beaumont refinery</td><td class="num">62,410</td><td class="num">11,200</td><td class="num">8,000</td><td class="num up">On track</td></tr>
+        <tr><td>Permian gathering system</td><td class="num">48,900</td><td class="num">9,800</td><td class="num">4,500</td><td class="num up">On track</td></tr>
+        <tr><td>Gulf Coast terminal</td><td class="num">31,205</td><td class="num">7,300</td><td class="num">2,000</td><td class="num down">Behind plan</td></tr>
+        <tr><td>Corporate & offices</td><td class="num">2,140</td><td class="num">13,300</td><td class="num">1,200</td><td class="num up">On track</td></tr>
+      </tbody>
+    </table>
+    <p class="panel-note" style="margin-bottom:60px;">Sample data — Ledger exports directly to CDP and TCFD-aligned report formats for a client engagement.</p>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Forward Curve Energy Advisory</span>
+    <span>Ledger — emissions &amp; ESG reporting</span>
+  </div>
+</footer>
+</body>
+</html>

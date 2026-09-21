@@ -1,0 +1,34 @@
+# Part F — five unique services: the hub plus four distinct tools,
+# all sharing one visual identity. Run with:
+#   docker-compose -f docker-compose.unique.yml up -d --build
+#
+# Ports match the cross-links baked into each page's nav bar
+# (see each site's index.html). If you deploy this to your AWS
+# instance, swap "localhost" for the instance's public IP in each
+# index.html before rebuilding, or in DNS/hosts if you set that up.
+
+services:
+  hub:
+    build: ./hub
+    ports:
+      - "9081:80"
+
+  curve:
+    build: ./curve
+    ports:
+      - "9082:80"
+
+  ledger:
+    build: ./ledger
+    ports:
+      - "9083:80"
+
+  portal:
+    build: ./portal
+    ports:
+      - "9084:80"
+
+  fieldnotes:
+    build: ./fieldnotes
+    ports:
+      - "9085:80"

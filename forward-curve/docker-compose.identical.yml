@@ -1,0 +1,29 @@
+# Part E — five identical copies of the same container (the hub site),
+# each reachable on its own port. Run with:
+#   docker-compose -f docker-compose.identical.yml up -d --build
+
+services:
+  hub-replica-1:
+    build: ./hub
+    ports:
+      - "8081:80"
+
+  hub-replica-2:
+    build: ./hub
+    ports:
+      - "8082:80"
+
+  hub-replica-3:
+    build: ./hub
+    ports:
+      - "8083:80"
+
+  hub-replica-4:
+    build: ./hub
+    ports:
+      - "8084:80"
+
+  hub-replica-5:
+    build: ./hub
+    ports:
+      - "8085:80"
